@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa eletronico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular.500,600,700,800,900*" rel="stylesheet"/>
+    <style>
+        *{
+            font-family:"Inter", sans-serif;
+        }
+
+        .none{
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-blue-500">
+    <div class="flex justify-center h-screen items-center">
+        <form action="" class="bg-gray-100 w-full max-w-md shadow-2xl">
+            <fieldset>
+                <legend class="text-3xl p-8 bg-blue-400 w-full text-white">Caixa eletronico javascript</legend>
+                <div class="m-8 mb-0">
+                   <input type="text" name="" id="" class="p-3 w-full border-2 border-gray-300 value" placeholder="Valor do saque">
+                </div>
+                <div class="m-8 mb-0">
+                    <p class="p-3 bg-blue-200 font-medium">Notas disponiveis: 100, 50 e 10</p>
+                </div>
+                <div class="m-8">
+                    <button class="bg-blue-500 text-white uppercase p-3 w-full font-medium btn">Exibir saque</button>
+                </div>
+                <div class="m-8 mb-0">
+                    <p class="p-3 bg-blue-500 mb-2 text-white notasCem none"></p>
+                    <p class="p-3 bg-blue-400 mb-2 text-white notasCinquenta none"></p>
+                    <p class="p-3 bg-blue-300 mb-2 text-white notasDez none"></p>
+                </div>
+            </fieldset>
+        </form>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
